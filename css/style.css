@@ -21,6 +21,9 @@ header{
 
 /*NAV*/
 
+nav h1{
+  padding-top: 10px;
+}
 
 * {box-sizing: border-box;}
 
