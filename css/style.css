@@ -20,9 +20,16 @@ header{
 .bg-branco{background-color: white}
 
 
-#navbar ul li a{
-  color:rgb(0, 0, 0);
-  font-weight: bold;
+/*NAV*/
+nav {
+  width: 100%;
+  top:0;
+  background-color: #222;
+  color: #fff;
+  height: 60px;
+}
+nav h1{
+  padding-top: 10px;
 }
 
 * {box-sizing: border-box;}
