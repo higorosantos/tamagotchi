@@ -15,12 +15,15 @@ header{
 .preto{color: #222}
 .bg-preto{background-color: rgb(34, 34, 34)}
 .verde{color: #31c2b6}
-.bg-salmao{background-color: #f08080}
+.bg-pura{background-color: #ebcf9b}
 .bg-branco{background-color: white}
 
 
 /*NAV*/
-
+nav {
+  background-image: url(../img/barra.jpg);
+  background-size: cover;
+}
 nav h1{
   padding-top: 10px;
 }
@@ -272,3 +275,7 @@ to {opacity: 1}
   }
 }
 /*rodape*/
+footer{
+  background-image: url(../img/super_mario_bros__world_by_lwiis64-d32ybh0.jpg);
+  background-size: cover;
+}
