@@ -1,7 +1,6 @@
 
 /* Cabeçalho */
 header{
-  background-image: url(../img/melhores-jogos-fliperama-730x400.jpg);
   background-size: cover;
   background-position: center;
   height: 300px;
@@ -21,19 +20,10 @@ header{
 
 
 /*NAV*/
-nav {
-  width: 100%;
-  top:0;
-  background-color: #222;
-  color: #fff;
-  height: 60px;
-}
-nav h1{
-  padding-top: 10px;
-}
+
 
 * {box-sizing: border-box;}
-body {font-family: Verdana, sans-serif;}
+
 .mySlides {display: none;}
 img {vertical-align: middle;}
 
