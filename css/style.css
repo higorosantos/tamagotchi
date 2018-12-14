@@ -278,3 +278,11 @@ to {opacity: 1}
       font-size: 10px;
   }
 }
+/*rodape*/
+rodape{
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  background-color: black;
+  color: white;
+}
