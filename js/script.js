@@ -1,27 +1,28 @@
 var saude = 100;
 var fome = 100;
-var dano =  0;
+var dano =  1;
 
 
 tempo();
 
 
 function alimentar (){
-    fome++;
-    document.getElementById("fome").innerHTML = fome;
-    tempo();
+        fome = fome + dano;
+        document.getElementById("fome").innerHTML = fome;
+        document.getElementById("fomebar").style.width =  fome + "%";
+
 }
 function tempo() {
     
-    
-    
     setInterval(function(){ 
         fome = fome - dano;
-        dano = Math.floor(Math.random() * 10);;
-      
+        dano = Math.floor(Math.random() * 15);;
+    
         document.getElementById("fome").innerHTML = fome;
+        document.getElementById("fomebar").style.width =  fome + "%";
         
-    }, 3000);
+        
+    }, 2000);
   
 }
 console.log(dano);
