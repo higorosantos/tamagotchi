@@ -1,6 +1,7 @@
 var saude = 100;
 var fome = 100;
 var higiene = 100; 
+var cd = [0,0,0];
 
 var dano =  1;
 
@@ -8,13 +9,25 @@ var dano =  1;
 
 tempo();
 
+function countdown(){
+    setTimeout(function(){cd[0] = cd[0] - 3}, 3000);
+
+}
+   
 
 
-function alimentar (){
+function alimentar(){
+    if (cd[0] == 0){
         fome = fome + dano;
         document.getElementById("fome").innerHTML = fome + "%";
         document.getElementById("fomebar").style.width =  fome + "%";
+        countdown();
+        cd[0] = cd[0] + 3;
 
+    }
+    else {
+    document.getElementById("humor").innerHTML = "nao pode ainda";
+    }
 }
 function remedio(){
     saude = saude + dano;
@@ -37,7 +50,6 @@ function tempo() {
     setInterval(function(){ 
         dano = Math.floor(Math.random() * 10);;
         fome = fome - dano;
-       
         console.log("fome tomou " + dano + " de dano")
 
         
@@ -79,6 +91,7 @@ function tempo() {
         }
         console.log(total)
         console.log(higiene)
+        console.log(cd)
         
         
     }, 2000);
