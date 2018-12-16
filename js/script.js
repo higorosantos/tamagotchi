@@ -60,7 +60,7 @@ function tempo() {
         
         var total = fome + higiene + saude;
         if (fome <= 0 || higiene <=0 || saude <=0){
-            document.getElementById("humor").innerHTML = "Morreu";
+            document.getElementById("humor").innerHTML ="Morreu"; alert("Vecê deixou seu bixinho virtual morrer. Precione f5 para começar novamente ");
             document.getElementById("pet").src = "img/t07.gif";
             
         
