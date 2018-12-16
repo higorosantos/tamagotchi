@@ -2,12 +2,12 @@ var saude = 100;
 var fome = 100;
 var higiene = 100; 
 
-
 var dano =  1;
 
 
 
 tempo();
+
 
 
 function alimentar (){
@@ -16,23 +16,47 @@ function alimentar (){
         document.getElementById("fomebar").style.width =  fome + "%";
 
 }
+function remedio(){
+    saude = saude + dano;
+    dano = Math.floor(Math.random() *10);;
+
+    document.getElementById("saude").innerHTML = saude + "%";
+    document.getElementById("saudebar").style.width = saude + "%";
+}
+
+function banhar(){
+    higiene = higiene + dano;
+    dano = Math.floor(Math.random() *10);;
+
+    document.getElementById("banhar").innerHTML = higiene + "%";
+    document.getElementById("banharbar").style.width = higiene + "%";
+}
 
 function tempo() {
     
     setInterval(function(){ 
-        fome = fome - dano;
         dano = Math.floor(Math.random() * 10);;
+        fome = fome - dano;
+       
         console.log("fome tomou " + dano + " de dano")
-        saude = saude - dano;
+
+        
         dano = Math.floor(Math.random() * 5);;
+        saude = saude - dano;
         console.log("saude tomou " + dano + " de dano")
+        
+        
+        dano = Math.floor(Math.random() * 13);;
         higiene = higiene - dano;
-        dano = Math.floor(Math.random() * 15);;
         console.log("higene tomou " + dano + " de dano")
         
     
         document.getElementById("fome").innerHTML = fome + "%" ;
         document.getElementById("fomebar").style.width =  fome + "%";
+        document.getElementById("saude").innerHTML = saude + "%" ;
+        document.getElementById("saudebar").style.width =  saude + "%";
+        document.getElementById("banhar").innerHTML = higiene + "%" ;
+        document.getElementById("banharbar").style.width =  higiene + "%";
         
         var total = fome + higiene + saude;
         if (fome <= 0 || higiene <=0 || saude <=0){
@@ -54,7 +78,7 @@ function tempo() {
         
         }
         console.log(total)
-        console.log(fome)
+        console.log(higiene)
         
         
     }, 2000);
@@ -62,5 +86,8 @@ function tempo() {
   
 
 }
+
+
+
 
 
