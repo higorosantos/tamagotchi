@@ -107,7 +107,6 @@ function banhar(){
     y = 2;
     if(coco == true){
         setTimeout(function(){
-         document.getElementById("pet").src = "img/t01.gif";
          coco = false;
          vimg();
          
