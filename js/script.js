@@ -5,10 +5,23 @@ var cd = [0,0,0];
 var coco = false;
 var year = 0;
 var dano =  1;
+var nome = 0;
 
-tempo();
-cagar();
-idade();
+
+
+
+function entrar(){
+    nome =  document.getElementById("nome").value;
+    document.getElementById("name").innerHTML = "Meu nome é " + nome;
+    document.getElementById("jogo").style = "display:block;"
+    document.getElementById("login").style = "display:none;"
+    
+
+    tempo();
+    cagar();
+    idade();
+    
+}
 
 
 function vimg(){
