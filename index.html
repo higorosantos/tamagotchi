@@ -26,46 +26,41 @@
 
 
 <body class="centro bg-pura">
-
-
-
-
-
-    <div  class="" id="tamagotchi">
-        <img src="img/t01.gif" id="pet">
+    <div class="humor">
+        <b id="humor">Felizão</b>
     </div>
-    <p>Fome: </p>
-    <b id="fome">100%</b>
-    <div class="progress centro" style="width:30%">
-        <div  id="fomebar" class="progress-bar" role="progressbar" aria-valuenow="100"
-        aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div></div>
-    <button type="button" onclick="alimentar()">Alimentar</button>
-
-    
-     <p>Saude:</p>
-    <b id="saude">100%</b>
-    <div class="progress centro" style="width:30%">
-        <div  id="saudebar" class="progress-bar" role="progressbar" aria-valuenow="100"
-        aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div></div>
-    <button type="button" onclick="remedio()">Remedio</button>
-   <div>
-    <p>Banho:</p>
-    <b id="banhar">100%</b>
-    <div class="progress centro" style="width:30%">
-        <div  id="banharbar" class="progress-bar" role="progressbar" aria-valuenow="100"
-        aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div></div>
-    <button type="button" onclick="banhar()">Banho</button>
-</div>
-
-
-    
-    <div class="container" style="">
-        <b id="humor">Muito Feliz</b>
-    </div>
-    <div style="height: 100px;">
-        <b id="cd" style="display:none; padding-top: 50px;">Função esta em tempo de recarga!!</b>
-    </div>  
-
+    <section class="box centro">
+        <div class="" id="tamagotchi">
+            <img class="tama" src="img/t01.gif" id="pet">
+        </div>
+        <div class="status">
+            <b>Fome: </b>
+            <b id="fome">100%</b>
+            <div class="barrinha progress centro" style="width:30%">
+                <div id="fomebar" class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0"
+                    aria-valuemax="100" style="width: 100%;"></div>
+            </div>
+            <img src="../tamagotchi/img/botãos/bitmap.png" type="button" onclick="alimentar()"></button>
+        </div>
+        <div class="status">
+            <b>Saúde:</b>
+            <b id="saude">100%</b>
+            <div class="barrinha progress centro" style="width:30%">
+                <div id="saudebar" class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0"
+                    aria-valuemax="100" style="width: 100%;"></div>
+            </div>
+            <img src="../tamagotchi/img/botãos/bitmap2.png" type="button" onclick="remedio()"><br></button>
+        </div>
+        <div class="status">
+            <b>Banho:</b>
+            <b id="banhar">100%</b>
+            <div class="barrinha progress centro" style="width:30%">
+                <div id="banharbar" class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0"
+                    aria-valuemax="100" style="width: 100%;"></div>
+            </div>
+            <img class="responsive image" src="../tamagotchi/img/botãos/bitmap1.png" type="button" onclick="banhar()"><br></button>
+        </div>
+    </section>
 
 
 </body>
