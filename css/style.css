@@ -302,5 +302,11 @@ to {opacity: 1}
 footer{
   background-image: url(../img/super_mario_bros__world_by_lwiis64-d32ybh0.jpg);
   background-size: cover;
+  width: 100%;
+  position: absolute;
+  bottom: 0%;
   
+}
+.img1 {
+  padding: 10px;
 }
