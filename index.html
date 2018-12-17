@@ -20,7 +20,7 @@
 
 <header class="navbar default">
 
-    
+
 
     <img src="img/cooltext309290392357146.png" class="titulotop img-fluid centro" alt="Responsive image">
 
@@ -36,30 +36,35 @@
             <img class="tama" src="img/t01.gif" id="pet">
         </div>
         <div class="status">
-            <b>Fome: </b>
-            <b id="fome">100%</b>
-            <div class="barrinha progress centro" style="width:30%">
+            <b class="esquerda">Fome: </b>
+            
+            <div class=" esquerda barrinha progress centro" style="width:30%">
                 <div id="fomebar" class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0"
                     aria-valuemax="100" style="width: 100%;"></div>
             </div>
-            <img src="../tamagotchi/img/botãos/bitmap.png" type="button" onclick="alimentar()"></button>
+            <b class="linha1 esquerda" id="fome">100%</b>
+            <img src="../tamagotchi/img/botãos/bitmap.jpg" type="button" onclick="alimentar()"></button>
         </div>
         <div class="status">
-            <b>Saúde:</b>
-            <b id="saude">100%</b>
-            <div class="barrinha progress centro" style="width:30%">
+            <b class="esquerda">Saúde:</b>
+            
+            <div class=" esquerda barrinha progress centro" style="width:30%">
                 <div id="saudebar" class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0"
                     aria-valuemax="100" style="width: 100%;"></div>
             </div>
+            <b class="linha1 esquerda"id="saude">100%</b>
+
             <img src="../tamagotchi/img/botãos/bitmap2.png" type="button" onclick="remedio()"><br></button>
         </div>
+        
         <div class="status">
-            <b>Banho:</b>
-            <b id="banhar">100%</b>
-            <div class="barrinha progress centro" style="width:30%">
+            <b class="esquerda">Banho:</b>
+            
+            <div class="esquerda barrinha progress centro" style="width:30%">
                 <div id="banharbar" class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0"
                     aria-valuemax="100" style="width: 100%;"></div>
             </div>
+            <b class="linha1 esquerda" id="banhar">100%</b>
             <img class="responsive image" src="../tamagotchi/img/botãos/bitmap1.png" type="button" onclick="banhar()"><br></button>
         </div>
     </section>
@@ -70,7 +75,7 @@
 
 <!-- Footer -->
 <footer class="">
-    <div class="footer-copyright text-center py-3 text-white">Desenvolvido por Equipe UCM
+    <div class="footer-copyright text-center py-3 text-white">Desenvolvido por Equipe UMC
         <a href="https://mdbootstrap.com/education/bootstrap/"></a>
     </div>
 
