@@ -211,8 +211,16 @@ header{
       
     }
     .tama{
-      width: 30%;
-    } 
+      width: 20%;
+    }
+    .humor{
+      padding: 8px 0px;
+    }
+    /* Botão de ação */
+    .barrinha{
+      margin-bottom: 10px;
+    
+    }
     /* Fading animation */
     .fade {
     -webkit-animation-name: fade;
