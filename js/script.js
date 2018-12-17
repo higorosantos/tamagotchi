@@ -26,7 +26,9 @@ function alimentar(){
 
     }
     else {
-    document.getElementById("humor").innerHTML = "nao pode ainda";
+    document.getElementById("cd").style = "display:block;";
+    setTimeout(function(){document.getElementById("cd").style = "transition: 1s; display: none;"}, 1000);
+    
     }
 }
 function remedio(){
@@ -72,7 +74,7 @@ function tempo() {
         
         var total = fome + higiene + saude;
         if (fome <= 0 || higiene <=0 || saude <=0){
-            document.getElementById("humor").innerHTML = "Morreu";
+            document.getElementById("humor").innerHTML ="Morreu"; alert("Vecê deixou seu bixinho virtual morrer. Precione f5 para começar novamente ");
             document.getElementById("pet").src = "img/t07.gif";
             
         
