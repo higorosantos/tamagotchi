@@ -142,7 +142,7 @@ header{
   
   .logo{
     display: inline-block;
-    padding: 10px 50px 0 0;
+    padding: 10px 50px;
   }
   
   .att{
@@ -199,7 +199,20 @@ header{
     .active {
     background-color: #717171;
     }
-    
+    /*navbar e logo  "tama"= gif do bixinho*/
+    .box{
+        padding: 50px;
+    }
+    .status{
+        padding: 20px;
+    }
+    .titulotop{
+      padding-bottom: 10px;
+      
+    }
+    .tama{
+      width: 35%;
+    } 
     /* Fading animation */
     .fade {
     -webkit-animation-name: fade;
