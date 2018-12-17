@@ -5,21 +5,27 @@ var cd = [0,0,0];
 var coco = false;
 var year = 0;
 var dano =  1;
-var nome = 0;
 
 
 
 
 function entrar(){
     nome =  document.getElementById("nome").value;
+    if (nome == ""){
+        document.getElementById("erro").innerHTML = "Digite um nome valido!";
+        console.log(nome)
+    }
+    else {
     document.getElementById("name").innerHTML = "Meu nome é " + nome;
     document.getElementById("jogo").style = "display:block;"
     document.getElementById("login").style = "display:none;"
-    
-
     tempo();
     cagar();
     idade();
+}
+    
+
+  
     
 }
 
