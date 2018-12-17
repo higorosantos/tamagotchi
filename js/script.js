@@ -3,12 +3,52 @@ var fome = 100;
 var higiene = 100; 
 var cd = [0,0,0];
 var coco = false;
-
+var year = 0;
 var dano =  1;
 
 tempo();
 cagar();
+idade();
 
+
+function vimg(){
+    if(year < 1){
+        document.getElementById("pet").src = "img/t01.gif";
+    }
+    else if (year > 1 ){
+        document.getElementById("pet").src = "img/t03.gif";
+    }
+    else if (year > 4){
+        document.getElementById("pet").src = "img/t05.gif";  
+    }
+    else if (year > 5){
+        document.getElementById("pet").src = "img/t06.gif";
+    }
+}
+
+function idade(){
+        
+        document.getElementById("age").innerHTML = "Eu acabei de nascer, cuide de mim!!";
+        
+    setInterval(function(){;
+        year++;
+        document.getElementById("age").innerHTML = "Eu estou com "  + year + " anos." ;
+        if(year == 1){
+        document.getElementById("pet").src = "img/t03.gif";
+        document.getElementById("age").innerHTML = "Eu estou com "  + year + " ano." ;
+        }
+        else if (year == 5){
+        document.getElementById("pet").src = "img/t05.gif";
+        }
+        else if (year == 9){
+        document.getElementById("pet").src = "img/t06.gif";
+        }
+        else if (year == 12){
+        
+        
+        }
+   },60000)
+}
 
 function countdown(y){
     setTimeout(function(){cd[y] = cd[y] - 3}, 3000);
@@ -20,15 +60,8 @@ function cagar(){
     setInterval(function(){
         coco = true;
         document.getElementById("pet").src = "img/tx.gif";
-      if(coco == true){
-          setInterval(function(){
-           higiene = higiene - 2;
 
-          },2000)
-
-      }
-
-    },60000)
+    },40000)
     
 }
 
@@ -73,10 +106,10 @@ function remedio(){
 function banhar(){
     y = 2;
     if(coco == true){
-        higiene = higiene + 25;
         setTimeout(function(){
          document.getElementById("pet").src = "img/t01.gif";
          coco = false;
+         vimg();
          
  
      },3000)
@@ -125,8 +158,8 @@ function tempo() {
         document.getElementById("banharbar").style.width =  higiene + "%";
         
         var total = fome + higiene + saude;
-        if (fome <= 0 || higiene <=0 || saude <=0){
-            document.getElementById("humor").innerHTML ="Morreu"; alert("Vecê deixou seu bixinho virtual morrer. Clique em Ok para começar novamente ");
+        if (fome <= 0 || higiene <=0 || saude <=0 ){
+            document.getElementById("humor").innerHTML ="Morreu"; alert("Você deixou seu bixinho virtual morrer. Clique em Ok para começar novamente ");
             location.reload();
             document.getElementById("pet").src = "img/t07.gif";
             
