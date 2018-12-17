@@ -28,6 +28,7 @@
 
 
 <body class="centro bg-pura">
+<<<<<<< HEAD
         <div class="teste2" id="login"><input type="text" placeholder="Digite o nome do seu tamagotchi: " id="nome">
             <button type="button" onclick="entrar()">Entrar</button>
         </div>
@@ -38,58 +39,75 @@
     </div>
     <div>
         <b id="age"></b>
+=======
+    <div id="login">
+        <input type="text" placeholder="Digite o nome do seu tamagotchi: " id="nome">
+        <button type="button" onclick="entrar()">Entrar</button>
+        <b id="erro"></b>
+>>>>>>> 8298436661e2a704f865d2e624d914ad9c685c00
     </div>
-    <section class="box centro">
-        <div class="imgtama" id="tamagotchi">
-            <img class="tama" src="img/t01.gif" id="pet">
-        </div>
-        <div class="status img1">
-            <b class="esquerda">Fome: </b>
-            
-            <div class=" esquerda barrinha progress centro" style="width:30%">
-                <div id="fomebar" class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0"
-                    aria-valuemax="100" style="width: 100%;"></div>
-            </div>
-            <b class="linha1 esquerda" id="fome">100%</b>
-            <img src="../tamagotchi/img/botãos/bitmap.jpg" type="button" onclick="alimentar()"></button>
-        </div>
-        <div class="status img1">
-            <b class="esquerda">Saúde:</b>
-            
-            <div class=" esquerda barrinha progress centro" style="width:30%">
-                <div id="saudebar" class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0"
-                    aria-valuemax="100" style="width: 100%;"></div>
-            </div>
-            <b class="linha1 esquerda"id="saude">100%</b>
+    <div id="jogo" style="display: none;">
 
-            <img src="../tamagotchi/img/botãos/bitmap2.png" type="button" onclick="remedio()"><br></button>
-        </div>
-        
-        <div class="status img1">
-            <b class="esquerda">Banho:</b>
-            
-            <div class="esquerda barrinha progress centro" style="width:30%">
-                <div id="banharbar" class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0"
-                    aria-valuemax="100" style="width: 100%;"></div>
-            </div>
-            <b class="linha1 esquerda" id="banhar">100%</b>
-            <img class="responsive image" src="../tamagotchi/img/botãos/bitmap1.png" type="button" onclick="banhar()"><br></button>
-        </div>
-        <div style="height: 80px">
-            <b id="cd" style="display: none;">Você ja fez essa ação recentemente,aguarde...</b>
+        <div class="humor">
+            <b id="humor">Muito Feliz</b>
         </div>
         <div>
-            <b id="name"></b>
+            <b id="age"></b>
         </div>
-    </section>
+        <section class="box centro">
+            <div class="" id="tamagotchi">
+                <img class="tama" src="img/t01.gif" id="pet">
+            </div>
+            <div class="status img1">
+                <b class="esquerda">Fome: </b>
 
-</div>
+                <div class=" esquerda barrinha progress centro" style="width:30%">
+                    <div id="fomebar" class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
+                </div>
+                <b class="linha1 esquerda" id="fome">100%</b>
+                <img src="../tamagotchi/img/botãos/bitmap.jpg" type="button" onclick="alimentar()">
+                </button>
+            </div>
+            <div class="status img1">
+                <b class="esquerda">Saúde:</b>
+
+                <div class=" esquerda barrinha progress centro" style="width:30%">
+                    <div id="saudebar" class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
+                </div>
+                <b class="linha1 esquerda" id="saude">100%</b>
+
+                <img src="../tamagotchi/img/botãos/bitmap2.png" type="button" onclick="remedio()">
+                <br>
+                </button>
+            </div>
+
+            <div class="status img1">
+                <b class="esquerda">Banho:</b>
+
+                <div class="esquerda barrinha progress centro" style="width:30%">
+                    <div id="banharbar" class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
+                </div>
+                <b class="linha1 esquerda" id="banhar">100%</b>
+                <img class="responsive image" src="../tamagotchi/img/botãos/bitmap1.png" type="button" onclick="banhar()">
+                <br>
+                </button>
+            </div>
+            <div style="height: 80px">
+                <b id="cd" style="display: none;">Você ja fez essa ação recentemente,aguarde...</b>
+            </div>
+            <div>
+                <b id="name"></b>
+            </div>
+        </section>
+
+    </div>
 </body>
 <script src="js/script.js"></script>
 
 <!-- Footer -->
 <footer class="">
-    <div class="footer-copyright text-center py-3 text-white">Desenvolvido por Equipe UMC <br> Copyright © 2018 by UMC TEAM
+    <div class="footer-copyright text-center py-3 text-white">Desenvolvido por Equipe UMC
+        <br> Copyright © 2018 by UMC TEAM
         <a href="https://mdbootstrap.com/education/bootstrap/"></a>
     </div>
 
