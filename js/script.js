@@ -47,7 +47,7 @@ function idade(){
         
         
         }
-   },5000)
+   },60000)
 }
 
 function countdown(y){
@@ -61,7 +61,7 @@ function cagar(){
         coco = true;
         document.getElementById("pet").src = "img/tx.gif";
 
-    },3000)
+    },40000)
     
 }
 
